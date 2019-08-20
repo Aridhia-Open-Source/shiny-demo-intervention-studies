@@ -8,11 +8,7 @@ circle_y <- rnorm(N, 0.5, 0.08)
 x_discharge <- runif(N, 4, 4.5)
 y_discharge <- runif(N, 0.4, 0.6)
 
-
-
-
 pred <- predict(recalibrated, type = "response")[1:N]
-
 
 ## points to go in the middle section, risk assessment
 x_risk <- runif(N, 2, 3)
@@ -31,20 +27,15 @@ predict_text <- "The risk of severe asthma exacerbations\n occuring is predicted
 discharged_text <- "You can choose to intervene in cases of\n high risk. This could be a more\n aggressive therapy or more stringent\n monitoring of the patient. In some\n cases you will intervene when it is\n not necessary and in some cases\n you will choose not to intervene\n and a patient will have a severe\n asthma exacerbation."
 # There are financial and health\n costs associated with each outcome. Are you ok with the results?"
 
-
 text_one <- data.frame(x = 0, y = c(1.6, 1.55, 1.5, 1.45, 1.4, 1.35), text = strsplit(review_text, "\n")[[1]])
 text_two <- data.frame(x = 2.7, y = c(1.65, 1.6, 1.55, 1.5, 1.45, 1.4, 1.35), text = strsplit(predict_text, "\n")[[1]])
 text_three <- data.frame(x = 5.25, y = c(1.7, 1.65, 1.6, 1.55, 1.5, 1.45, 1.4, 1.35, 1.3), text = strsplit(discharged_text, "\n")[[1]])
-
-
-
 
 server <- function(input, output, session) {
   
   callModule(scorer, "scorer")
   
   threshold_line <- reactive({
-    
     threshold <- input$threshold
     breaks <- input$breaks
     
@@ -53,28 +44,20 @@ server <- function(input, output, session) {
     }
     
     if (threshold <= input$breaks[1]) {
-      
       threshold <- threshold - 0.2
-      
     }
     
     data.frame(x = c(1.9, 3.5), y = threshold)
-    
   })
   
   
   low_mod_high <- reactive({
-    
     cut(pred, breaks = c(-0.1, input$breaks, 1.1), labels = c("Low", "Moderate", "High"))
-    
   })
   
   discharged <- reactive({
-    
     cut(pred, breaks = c(-0.1, input$threshold, 1.1), labels = c("Yes", "No"))
-    
   })
-  
   
   risk_group_points <- reactive({
     
@@ -87,20 +70,15 @@ server <- function(input, output, session) {
   })
   
   discharge_group_points <- reactive({
-    
     dis <- discharged()
     
     x_dis <- x_discharge + response * 2
     y_dis <- y_discharge + ifelse(dis == "Yes", -0.3, 0.3)
     
     data.frame(x = x_dis, y = y_dis)
-    
   })
   
-  
-  
   points_df <- reactive({
-    
     time <- input$time
     risk_points <- risk_group_points()
     discharge_points <- discharge_group_points()
@@ -114,11 +92,9 @@ server <- function(input, output, session) {
       return(start_points)
     }
     
-    
     ## move points into the risk rectangles
     start_points[1:time, "x"] <- risk_points[1:time, "x"]
     start_points[1:time, "y"] <- risk_points[1:time, "y"]
-    
     
     ## move points into the discharge rectangles
     if (time > 20) {
@@ -128,13 +104,11 @@ server <- function(input, output, session) {
       
     }
     
-    
     start_points$risk_new <- factor(ifelse(start_points$x >= 1.9,
                                            as.character(start_points$risk),
                                            as.character(start_points$risk_new)),
                                     levels = c("High", "Moderate","Low", "Not Scored"))
     start_points
-    
   })
   
   #incorrectly kept in hospital
@@ -174,7 +148,8 @@ server <- function(input, output, session) {
   
   
   # Data for key showing readmitted & not readmitted
-  key <- data.frame(x1 = c(-0.3, -0.3), y1 = c(0, -0.05), fill_col = c(1,0), x2 = c(-0.2, -0.2), y2 = c(-0.01, -0.06), labels = c("- Asthma Exacerbation", "- No Asthma Exacerbation"))
+  key <- data.frame(x1 = c(-0.3, -0.3), y1 = c(0, -0.05), fill_col = c(1,0), x2 = c(-0.2, -0.2), y2 = c(-0.01, -0.06),
+                    labels = c("- Asthma Exacerbation", "- No Asthma Exacerbation"))
   
   
   # Title for circle
@@ -184,9 +159,7 @@ server <- function(input, output, session) {
   risk_title <- data.frame(x = c(1.9, 1.9, 1.9), y = c(1.45, 1.4, 1.35), text = c("Classification of risk",  "of readmission within", "30 days of discharge"))
   
   rects_df <- reactive({
-    
     breaks <- c(0, input$breaks, 1)
-    
     
     rects_x <- c(1.9, 1.9, 1.9, 3.9, 3.9)
     rects_x2 <- c(3.5, 3.5, 3.5, 6.6, 6.6)
@@ -195,11 +168,7 @@ server <- function(input, output, session) {
     labels <- c("Low Risk", "Moderate Risk", "High Risk", "Cases Not Intervened In", "Cases Intervened In")
     labels_x <- sapply(seq_along(rects_x), function(i) (rects_x[i] + rects_x2[i])/2)
     
-    rects_df <- data.frame(rects_x, rects_x2, rects_y, rects_y2, labels, labels_x)
-    
-    
-    rects_df
-    
+    data.frame(rects_x, rects_x2, rects_y, rects_y2, labels, labels_x)
   })
   
   col_lines_df <- reactive({
@@ -212,10 +181,7 @@ server <- function(input, output, session) {
     data.frame(x, y, gr) %>% group_by(gr)
   })
   
-  
-  #output$test <- renderDataTable({points_df()})
-  
-  
+  # Main plot output
   ggvis(points_df) %>%
     layer_points(~x, ~y, stroke = ~risk_new, fillOpacity = ~readmitted, fill = ~risk_new, strokeWidth := 2) %>%
     #layer_points(~x, ~y, stroke = ~risk, shape = ~factor(readmitted), fill = ~risk) %>%
@@ -246,5 +212,4 @@ server <- function(input, output, session) {
     hide_axis("x") %>%
     hide_axis("y") %>%
     bind_shiny("plot")
-  
 }
