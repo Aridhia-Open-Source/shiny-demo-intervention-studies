@@ -1,0 +1,160 @@
+"trust_name","trust_code","coefficient"
+"Aintree University Hospitals NHS Foundation Trust","REM",-0.276
+"Airedale NHS Trust","RCF",-0.2998
+"Ashford and St Peter's Hospitals NHS Trust","RTK",-0.1424
+"Barking, Havering and Redbridge Hospitals NHS Trust","RF4",-0.1699
+"Barnet and Chase Farm Hospitals NHS Trust","RVL",0.137
+"Barnsley Hospital NHS Foundation Trust","RFF",-0.2976
+"Barts and The London NHS Trust","RNJ",0.1171
+"Basildon and Thurrock University Hospitals NHS Foundation Trust","RDD",-0.0762
+"Basingstoke and North Hampshire NHS Foundation Trust","RN5",-0.2353
+"Bedford Hospital NHS Trust","RC1",-0.3056
+"Blackpool, Fylde and Wyre Hospitals NHS Foundation Trust","RXL",-0.1201
+"Bradford Teaching Hospitals NHS Foundation Trust","RAE",-0.1872
+"Brighton and Sussex University Hospitals NHS Trust","RXH",-0.0043
+"Bromley Hospitals NHS Trust","RG3",-0.2153
+"Buckinghamshire Hospitals NHS Trust","RXQ",0.0026
+"Burton Hospitals NHS Foundation Trust","RJF",-0.1109
+"Calderdale and Huddersfield NHS Foundation Trust","RWY",-0.2049
+"Cambridge University Hospitals NHS Foundation Trust","RGT",-0.1115
+"Central Manchester University Hospitals NHS Foundation Trust","RW3",-0.0782
+"Chelsea and Westminster Hospital NHS Foundation Trust","RQM",-0.2388
+"Chesterfield Royal Hospital NHS Foundation Trust","RFS",-0.3527
+"City Hospitals Sunderland NHS Foundation Trust","RLN",-0.1949
+"Colchester Hospital University NHS Foundation Trust","RDE",-0.3485
+"Countess of Chester Hospital NHS Foundation Trust","RJR",-0.2975
+"County Durham and Darlington NHS Foundation Trust","RXP",-0.0943
+"Dartford and Gravesham NHS Trust","RN7",-0.1673
+"Derby Hospitals NHS Foundation Trust","RTG",-0.1749
+"Doncaster and Bassetlaw Hospitals NHS Foundation Trust","RP5",-0.2514
+"Dorset County Hospital NHS Foundation Trust","RBD",-0.1666
+"Ealing Hospital NHS Trust","RC3",-0.0314
+"East and North Hertfordshire NHS Trust","RWH",-0.236
+"East Cheshire NHS Trust","RJN",-0.0539
+"East Kent Hospitals University NHS Foundation Trust","RVV",-0.0078
+"East Lancashire Hospitals NHS Trust","RXR",-0.3743
+"East Sussex Hospitals NHS Trust","RXC",-0.1331
+"Epsom and St Helier University Hospitals NHS Trust","RVR",-0.0332
+"Frimley Park Hospital NHS Foundation Trust","RDU",-0.1811
+"Gateshead Health NHS Foundation Trust","RR7",-0.0421
+"George Eliot Hospital NHS Trust","RLT",-0.1241
+"Gloucestershire Hospitals NHS Foundation Trust","RTE",-0.2831
+"Great Western Hospitals NHS Foundation Trust","RN3",-0.0955
+"Guy's and St Thomas' NHS Foundation Trust","RJ1",-0.2393
+"Harrogate and District NHS Foundation Trust","RCD",-0.3723
+"Heart of England NHS Foundation Trust","RR1",-0.0084
+"Heatherwood and Wexham Park Hospitals NHS Foundation Trust","RD7",-0.1483
+"Hereford Hospitals NHS Trust","RLQ",-0.2719
+"Hinchingbrooke Health Care NHS Trust","RQQ",-0.2993
+"Homerton University Hospital NHS Foundation Trust","RQX",-0.1506
+"Hull and East Yorkshire Hospitals NHS Trust","RWA",-0.1879
+"Imperial College Healthcare NHS Trust","RYJ",-0.1089
+"Ipswich Hospital NHS Trust","RGQ",-0.207
+"James Paget University Hospitals NHS Foundation Trust","RGP",-0.2747
+"Kettering General Hospital NHS Foundation Trust","RNQ",-0.2582
+"King's College Hospital NHS Foundation Trust","RJZ",-0.0806
+"Kingston Hospital NHS Trust","RAX",-0.1913
+"Lancashire Teaching Hospitals NHS Foundation Trust","RXN",-0.1646
+"Liverpool Heart and Chest Hospital NHS Trust","RBQ",-0.0228
+"Luton and Dunstable Hospital NHS Foundation Trust","RC9",-0.2842
+"Maidstone and Tunbridge Wells NHS Trust","RWF",-0.1074
+"Mayday Healthcare NHS Trust","RJ6",-0.0229
+"Medway NHS Foundation Trust","RPA",-0.0899
+"Mid Cheshire Hospitals NHS Foundation Trust","RBT",-0.1522
+"Mid Essex Hospital Services NHS Trust","RQ8",-0.0817
+"Mid Staffordshire NHS Foundation Trust","RJD",-0.3216
+"Mid Yorkshire Hospitals NHS Trust","RXF",-0.1774
+"Milton Keynes Hospital NHS Foundation Trust","RD8",-0.0253
+"Newham University Hospital NHS Trust","RNH",0.064
+"Norfolk and Norwich University Hospitals NHS Foundation Trust","RM1",-0.2619
+"North Bristol NHS Trust","RVJ",-0.222
+"North Cumbria University Hospitals NHS Trust","RNL",-0.2746
+"North Middlesex University Hospital NHS Trust","RAP",-0.1964
+"North Tees and Hartlepool NHS Foundation Trust","RVW",-0.1317
+"North West London Hospitals NHS Trust","RV8",-0.1428
+"Northampton General Hospital NHS Trust","RNS",-0.0896
+"Northern Devon Healthcare NHS Trust","RBZ",-0.2258
+"Northern Lincolnshire and Goole Hospitals NHS Foundation Trust","RJL",-0.5869
+"Northumbria Healthcare NHS Foundation Trust","RTF",-0.0188
+"Nottingham University Hospitals NHS Trust","RX1",-0.058
+"Nuffield Orthopaedic Centre NHS Trust","RBF",-0.3788
+"Oxford Radcliffe Hospitals NHS Trust","RTH",0.0293
+"Papworth Hospital NHS Foundation Trust","RGM",-0.2873
+"Pennine Acute Hospitals NHS Trust","RW6",-0.0963
+"Peterborough and Stamford Hospitals NHS Foundation Trust","RGN",-0.1736
+"Plymouth Hospitals NHS Trust","RK9",-0.1309
+"Poole Hospital NHS Foundation Trust","RD3",-0.142
+"Portsmouth Hospitals NHS Trust","RHU",-0.2619
+"Queen Elizabeth Hospital NHS Trust","RG2",-0.2003
+"Queen Mary's Sidcup NHS Trust","RGZ",0.1977
+"Queen Victoria Hospital NHS Foundation Trust","RPC",-0.7424
+"Robert Jones and Agnes Hunt Orthopaedic and District Hospital NHS Trust","RL1",-0.9757
+"Royal Berkshire NHS Foundation Trust","RHW",-0.0596
+"Royal Bolton Hospital NHS Foundation Trust","RMC",-0.1824
+"Royal Brompton and Harefield NHS Trust","RT3",-0.1868
+"Royal Cornwall Hospitals NHS Trust","REF",-0.2333
+"Royal Devon and Exeter NHS Foundation Trust","RH8",-0.4095
+"Royal Free Hampstead NHS Trust","RAL",-0.1618
+"Royal Liverpool and Broadgreen University Hospitals NHS Trust","RQ6",-0.3406
+"Royal National Orthopaedic Hospital NHS Trust","RAN",-0.4974
+"Royal Surrey County Hospital NHS Trust","RA2",-0.2396
+"Royal United Hospital Bath NHS Trust","RD1",-0.1534
+"Royal West Sussex NHS Trust","RPR",-0.1866
+"Salford Royal NHS Foundation Trust","RM3",-0.0193
+"Salisbury NHS Foundation Trust","RNZ",-0.2773
+"Sandwell and West Birmingham Hospitals NHS Trust","RXK",-0.2114
+"Scarborough and North East Yorkshire Health Care NHS Trust","RCC",-0.222
+"Sheffield Teaching Hospitals NHS Foundation Trust","RHQ",-0.1122
+"Sherwood Forest Hospitals NHS Foundation Trust","RK5",-0.14
+"Shrewsbury and Telford Hospital NHS Trust","RXW",-0.1483
+"South Devon Healthcare NHS Foundation Trust","RA9",-0.2524
+"South Tees Hospitals NHS Trust","RTR",-0.1628
+"South Tyneside NHS Foundation Trust","RE9",-0.1685
+"South Warwickshire General Hospitals NHS Trust","RJC",-0.3267
+"Southampton University Hospitals NHS Trust","RHM",-0.1075
+"Southend University Hospital NHS Foundation Trust","RAJ",-0.1287
+"Southport and Ormskirk Hospital NHS Trust","RVY",-0.1521
+"St George's Healthcare NHS Trust","RJ7",-0.1255
+"St Helens and Knowsley Teaching Hospitals NHS Trust","RBN",-0.1906
+"Stockport NHS Foundation Trust","RWJ",-0.0262
+"Surrey and Sussex Healthcare NHS Trust","RTP",0.0328
+"Tameside Hospital NHS Foundation Trust","RMP",-0.1788
+"Taunton and Somerset NHS Foundation Trust","RBA",-0.1476
+"The Christie NHS Foundation Trust","RBV",0.223
+"The Dudley Group of Hospitals NHS Foundation Trust","RNA",-0.2269
+"The Hillingdon Hospital NHS Trust","RAS",0.0248
+"The Lewisham Hospital NHS Trust","RJ2",-0.1687
+"The Newcastle Upon Tyne Hospitals NHS Foundation Trust","RTD",-0.1109
+"The Princess Alexandra Hospital NHS Trust","RQW",-0.0683
+"The Queen Elizabeth Hospital King's Lynn NHS Trust","RCX",-0.0785
+"The Rotherham NHS Foundation Trust","RFR",-0.0542
+"The Royal Bournemouth and Christchurch Hospitals NHS Foundation Trust","RDZ",-0.2014
+"The Royal Marsden NHS Foundation Trust","RPY",0.3081
+"The Royal Orthopaedic Hospital NHS Foundation Trust","RRJ",-0.342
+"The Royal Wolverhampton Hospitals NHS Trust","RL4",-0.1756
+"The Whittington Hospital NHS Trust","RKE",-0.1693
+"Trafford Healthcare NHS Trust","RM4",-0.668
+"United Lincolnshire Hospitals NHS Trust","RWD",-0.3556
+"University College London Hospitals NHS Foundation Trust","RRV",-0.1072
+"University Hospital of North Staffordshire NHS Trust","RJE",-0.1361
+"University Hospital of South Manchester NHS Foundation Trust","RM2",-0.2162
+"University Hospitals Birmingham NHS Foundation Trust","RRK",-0.0951
+"University Hospitals Bristol NHS Foundation Trust","RA7",-0.1736
+"University Hospitals Coventry and Warwickshire NHS Trust","RKB",-0.1415
+"University Hospitals of Leicester NHS Trust","RWE",-0.083
+"University Hospitals of Morecambe Bay NHS Trust","RTX",-0.1777
+"Walsall Hospitals NHS Trust","RBK",-0.0933
+"Warrington and Halton Hospitals NHS Foundation Trust","RWW",-0.0641
+"West Hertfordshire Hospitals NHS Trust","RWG",-0.2533
+"West Middlesex University Hospital NHS Trust","RFW",-0.1244
+"West Suffolk Hospitals NHS Trust","RGR",-0.1079
+"Weston Area Health NHS Trust","RA3",-0.3588
+"Whipps Cross University Hospital NHS Trust","RGC",-0.0757
+"Winchester and Eastleigh Healthcare NHS Trust","RN1",-0.0749
+"Wirral University Teaching Hospital NHS Foundation Trust","RBL",-0.1166
+"Worcestershire Acute Hospitals NHS Trust","RWP",-0.1848
+"Worthing and Southlands Hospitals NHS Trust","RPL",-0.0328
+"Wrightington, Wigan and Leigh NHS Foundation Trust","RRF",-0.3123
+"Yeovil District Hospital NHS Foundation Trust","RA4",-0.3096
+"York Hospitals NHS Foundation Trust","RCB",-0.212
+"Any other hospital","",-0.1155
