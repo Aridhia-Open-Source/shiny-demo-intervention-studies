@@ -5,6 +5,7 @@ Unplanned hospital admissions and readmissions increase the cost of healthcare a
 This RShiny mini-app is a visualisation tool that shows the predicted classification of 200 patients from a synthetic sample dataset created by Aridhia. The patients in this sample data are children at risk of severe asthma exacerbations.Using this sample data, we calculated the predicted risk of readmission within 30 days using the default original PARR-30 coefficients. As the real outcome of each of these patients is known, it allows for comparison with the predicted model. 
 
 For more information you can read our blog post on this app: https://www.aridhia.com/blog/parr-30-mini-app/.
+
 The paper explaining the development of the PARR-30 model can be found here: https://bmjopen.bmj.com/content/2/4/e001667
 
 #### Checkout and run
