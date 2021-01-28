@@ -10,14 +10,6 @@ body <- dashboardBody(
           fluidRow(
             column(3,
               wellPanel(width = 12,
-                HTML("Asthma is a complex disease known to be influenced by both genetic and environmental factors.
-                     26.7 million or about 9.7% of the population in the United States have had asthma during their lifetime.
-                     In the year 2000, asthma exacerbations resulted in 1,499 deaths, 1.1 million hospital days,
-                     and $2.9 billion in direct expenditures in the United States. The ability to predict severe asthma
-                     exacerbations would therefore have direct prognostic significance and might form the basis for the
-                     development of novel therapeutic interventions."),
-                br(),
-                br(),
                 sliderInput("time", HTML("<b>Start the timer to begin the simulation</b>"),
                             min = 0, max = 200, value = 0, step = 1,
                             animate = animationOptions(loop = TRUE,
@@ -49,7 +41,8 @@ body <- dashboardBody(
     ),
     tabPanel("Scorer",
       scorerUI("scorer")
-    )
+    ),
+    documentation_tab()
   )
 )
 

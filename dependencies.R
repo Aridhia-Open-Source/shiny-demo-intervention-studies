@@ -1,3 +1,8 @@
+##########################
+###### DEPENDENCIES ######
+##########################
+
+
 install.packages("ggvis")
 install.packages("shiny")
 install.packages("shinydashboard")
