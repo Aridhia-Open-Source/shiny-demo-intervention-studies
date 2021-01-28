@@ -52,6 +52,7 @@ scorer <- function(input, output, session) {
     })
   })
   
+  
   pred <- reactive({
     if(is.null(df())) {
       return(NULL)
@@ -60,7 +61,10 @@ scorer <- function(input, output, session) {
     }
   })
   
-  output$pred <- renderText(pred())
+  output$pred <- renderText(
+    pred()
+    )
+  
   
   return(df)
 }
@@ -90,17 +94,54 @@ scorerUI <- function(id) {
   ns <- NS(id)
   
   fluidPage(
-    checkboxInput(ns("admission_method"), "Emergency Admission"),
-    numericInput(ns("imd_score"), "IMD Score", value = NA, min =  0, max = 82),
-    numericInput(ns("age_at_discharge"), "Age", value = NA, min = 18, max = 100),
-    numericInput(ns("emerg_last_year"), "Emergency Admissions Last Year", value = NA, min = 0, max = 20),
-    checkboxInput(ns("emerg_last_30_days"), "Emergency Admission in Last 30 Days"),
-    checkboxGroupInput(ns("comorb"), "Medical History", choices = comorb_choices, selected = ""),
-    selectInput(ns("trust_code"), "Trust", choices = trust_choices, selected = ""),
-  
-    actionButton(ns("calculate_score"), "Calculate Risk"),
+    titlePanel("Score Calculator"),
+    
+    
+    fluidRow(
+      box(width = 12,
+      
+      column(3,
+             wellPanel(height = "100px",
+             numericInput(ns("imd_score"), 
+                          label = "Index of Multiple Deprivation (IMD) Score", 
+                          value = NA, min =  0, max = 82),
+             p(class = "nb","1 (least deprived) to >50 (most deprived)"),
+             numericInput(ns("age_at_discharge"), "Age at discharge", value = NA, min = 18, max = 100),
+             checkboxInput(ns("admission_method"), "Emergency Admission")
+             )),
+      column(3,
+             wellPanel(height = "100px",
+             numericInput(ns("emerg_last_year"), "Number of Emergency Admissions Last Year", value = NA, min = 0, max = 20),
+             checkboxInput(ns("emerg_last_30_days"), "Emergency Admission in Last 30 Days"),
+             br(),
+             )),
+      column(3,
+             wellPanel(height = "100px",
+             checkboxGroupInput(ns("comorb"), "Medical History", choices = comorb_choices, selected = "")
+             )),
+      column(3,
+             wellPanel(height = "1000px",
+             selectInput(ns("trust_code"), "Trust", choices = trust_choices, selected = ""),
+             br()
+             ))
+    )),
+    
+    hr(),
+    
+    fluidRow(
+      column(2,
+             actionButton(ns("calculate_score"), "Calculate Risk")
+             ),
+      column(4,
+             box(
+               h4("The calculated risk score is: "),
+               br(),
+               textOutput(ns("pred"))
+             )
+             )
 
-    textOutput(ns("pred"))  
+    )
+
   )
 }
 
