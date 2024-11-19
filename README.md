@@ -13,7 +13,7 @@ The paper explaining the development of the PARR-30 model can be found here: htt
 You can clone this repository by using the command:
 
 ```
-git clone https://github.com/aridhia/demo-intervention-studies
+git clone https://github.com/Aridhia-Open-Source/shiny-demo-intervention-studies
 ```
 
 Open the .Rproj file in RStudio and use `runApp()` to start the app.
